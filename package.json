@@ -2,6 +2,9 @@
   "name": "jarvis-net",
   "version": "0.0.1",
   "dependencies": {
-    
+    "grpc": "^1.8.0",
+    "level": "^2.1.1",
+    "openssl-wrapper": "^0.3.4",
+    "winston": "^3.0.0-rc1"
   }
 }
