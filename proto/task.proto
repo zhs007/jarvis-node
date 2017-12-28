@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package jarvistask;
+
+service JarvisTask {
+    rpc chgTaskState (RequestChgTaskState) returns (ReplyChgTaskState) {}
+    rpc taskLog (RequestTaskLog) returns (ReplyTaskLog) {}
+}
+
+enum TaskState {
+    START = 1;
+    RUNNING = 2;
+    END = 3;
+}
+
+message RequestChgTaskState {
+    TaskState taskState = 1;
+    string taskid = 2;
+}
+  
+message ReplyChgTaskState {
+    bool isOK = 1;
+}
+
+message RequestTaskLog {
+    string level = 1;
+    string info = 2;
+}
+  
+message ReplyTaskLog {
+    bool isOK = 1;
+}
