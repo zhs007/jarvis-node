@@ -4,7 +4,8 @@
   "dependencies": {
     "grpc": "^1.8.0",
     "level": "^2.1.1",
-    "openssl-wrapper": "^0.3.4",
+    "libbitcoincrypo": "^1.0.2",
+    "libfortuna": "^1.2.11",
     "winston": "^3.0.0-rc1"
   }
 }
