@@ -1,11 +1,11 @@
 {
   "name": "jarvis-net",
-  "version": "0.0.2",
+  "version": "0.1.2",
   "dependencies": {
-    "grpc": "^1.8.0",
-    "level": "^2.1.1",
+    "grpc": "^1.12.2",
+    "level": "^4.0.0",
     "libbitcoincrypo": "^1.0.2",
-    "libfortuna": "^1.2.11",
-    "winston": "^3.0.0-rc1"
+    "libfortuna": "^1.2.15",
+    "winston": "^3.0.0-rc5"
   }
 }
