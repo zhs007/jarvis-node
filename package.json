@@ -1,6 +1,6 @@
 {
   "name": "jarvis-net",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "dependencies": {
     "grpc": "^1.12.2",
     "level-rocksdb": "^3.0.0",
