@@ -7,4 +7,4 @@ const cfg = {
 };
 
 const node = new JarvisNode(cfg);
-node.start();
+node.start(() => {});
