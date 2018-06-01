@@ -1,0 +1,14 @@
+type NodeInfo {
+    nameid: String!
+    nodeAddr: String!
+    clientNums: Int!
+    connectNums: Int!
+}
+
+type Query {
+    nodes: [NodeInfo]!
+}
+
+schema {
+    query: Query
+}
