@@ -2,9 +2,16 @@ syntax = "proto3";
 
 package jarvisnetcore;
 
+enum NodeType {
+    NORMAL = 0;
+    TEMP = 1;
+    ACCOUNT = 2;
+}
+
 message RequestWant2Join {
     string nameid = 1;
     string nodeAddr = 2;
+    NodeType nodeType = 3;
 }
   
 message ReplyNodeInfo {
@@ -12,6 +19,7 @@ message ReplyNodeInfo {
     string nodeAddr = 2;
     int32 clientnums = 3;
     int32 connectnums = 4;
+    NodeType nodeType = 5;
 }
 
 service JarvisNetCore {
